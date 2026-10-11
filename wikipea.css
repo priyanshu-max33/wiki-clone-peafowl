@@ -1,0 +1,267 @@
+/* Page Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f6f7f8;
+  color: #202122;
+  line-height: 1.6;
+}
+
+/* Header */
+.wiki-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 8px 24px;
+  border-bottom: 1px solid #c8ccd1;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-area img {
+  height: 38px;
+  width: auto;
+}
+
+.logo-area span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.search-section {
+  display: flex;
+  gap: 6px;
+  width: 380px;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #a2a9b1;
+  border-radius: 3px;
+  font-size: 0.88rem;
+}
+
+.search-section button {
+  padding: 6px 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.search-section button:hover {
+  background-color: #eaecf0;
+}
+
+.user-links {
+  display: flex;
+  gap: 12px;
+}
+
+.user-links a {
+  color: #3366cc;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.user-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.main-wrapper {
+  display: flex;
+  max-width: 1240px;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: calc(100vh - 55px);
+  border-left: 1px solid #eaecf0;
+  border-right: 1px solid #eaecf0;
+}
+
+/* Left Sidebar (TOC) */
+.sidebar-nav {
+  width: 220px;
+  flex-shrink: 0;
+  padding: 20px 14px;
+  border-right: 1px solid #eaecf0;
+  background: #fbfbfc;
+}
+
+.sidebar-nav h4 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #54595d;
+  border-bottom: 1px solid #c8ccd1;
+  padding-bottom: 4px;
+}
+
+.nav-list, .sub-nav-list {
+  list-style: none;
+}
+
+.nav-list > li {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.sub-nav-list {
+  padding-left: 14px;
+  margin-top: 5px;
+}
+
+.sub-nav-list li {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+.sidebar-nav a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.sidebar-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Content Area */
+.page-content {
+  flex: 1;
+  padding: 26px 36px;
+  max-width: 900px;
+}
+
+.page-title {
+  font-family: "Linux Libertine", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+
+.article-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.article-meta a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #3366cc;
+  padding-bottom: 6px;
+}
+
+.article-meta a.current-tab {
+  color: #202122;
+  font-weight: 600;
+  border-bottom: 2px solid #3366cc;
+}
+
+.hatnote {
+  font-size: 0.82rem;
+  color: #54595d;
+  margin-bottom: 16px;
+}
+
+.page-content p {
+  margin-bottom: 14px;
+  font-size: 0.92rem;
+  text-align: justify;
+}
+
+.page-content h2 {
+  font-family: "Linux Libertine", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  border-bottom: 1px solid #a2a9b1;
+  margin: 26px 0 10px 0;
+  padding-bottom: 3px;
+}
+
+.page-content h3 {
+  font-size: 1.1rem;
+  margin: 16px 0 8px 0;
+}
+
+/* Infobox Card */
+.taxo-box {
+  float: right;
+  width: 290px;
+  margin: 0 0 16px 20px;
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.taxo-box th, .taxo-box td {
+  padding: 5px 8px;
+}
+
+.taxo-box .box-title {
+  background-color: #c9d8ea;
+  text-align: center;
+  font-size: 0.98rem;
+}
+
+.taxo-box .section-heading th {
+  background-color: #dce7f5;
+  text-align: center;
+  font-size: 0.88rem;
+}
+
+.taxo-box .box-image {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.taxo-box .box-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.taxo-box .img-caption {
+  font-size: 0.78rem;
+  color: #54595d;
+  padding: 5px 4px;
+}
+
+/* Thumbnail Figures */
+.article-thumb {
+  float: right;
+  clear: right;
+  width: 240px;
+  margin: 8px 0 16px 20px;
+  border: 1px solid #c8ccd1;
+  background-color: #f8f9fa;
+  padding: 4px;
+}
+
+.article-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-thumb figcaption {
+  font-size: 0.78rem;
+  color: #333333;
+  padding: 5px 3px 2px 3px;
+}
